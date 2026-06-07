@@ -4,31 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/asset/css/style.css">
+    <title>Mon Site Moderne</title>
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 
 <body>
-    <header class="positionRelative">
+    <header>
         <h1>Mon Site Moderne</h1>
-        <div>
-            <img class="positionAbsolute" src="/asset/image/1000_F_225221877_9x7repcZzz4ryhvZ4Z5DmlnnCTdTUImT.png" alt="">
-        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav>
-            <ul>
-                <li>
-                    <a href="Accueil">Accueil</a>
-                    <a href=""></a>
-                    <a href=""></a>
-                </li>
-            </ul>
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <main>
+        <section id="accueil">
+            <h2>Bienvenue</h2>
+            <p>Ce site s'adapte à la taille de votre écran grâce aux media queries.</p>
+        </section>
 
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>Sur grand écran, le menu est affiché horizontalement. Sur mobile, un bouton menu apparaît.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Exemple simple pour mettre en pratique le responsive design.</p>
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <p>&copy; 2025 — Exercice Media Queries</p>
     </footer>
 </body>
 
